@@ -20,7 +20,7 @@ app.use(function(req, res, next) {
 const config = require('./config.js');
 const mongoose = require('mongoose');
 require('./lab.routes.js')(app);  //Add route file here
-
+require('./horario.routes.js')(app); 
 mongoose.Promise = global.Promise;
 
 // Connecting to the database

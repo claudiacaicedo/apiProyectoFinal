@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const horaSchema = mongoose.Schema({
+const horarioSchema = mongoose.Schema({
 
     laboratorio: String,
     docente: String,
@@ -12,4 +12,4 @@ const horaSchema = mongoose.Schema({
     timestamps: true
 });
 
-module.exports = mongoose.model('Horas', horaSchema);
+module.exports = mongoose.model('Horarios', horarioSchema);
