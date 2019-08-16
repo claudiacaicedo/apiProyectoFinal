@@ -74,7 +74,7 @@ exports.update = (req, res) => {
 
     // Find and update lab with the request body
     Horario.findByIdAndUpdate(req.params.horarioId, {
-        laboratorio: req.body.nombre || "Sin nombre de Horario", 
+        laboratorio: req.body.laboratorio || "Sin nombre de Horario", 
         docente: req.body.docente,
         materia: req.body.materia,
         horaEntrada: req.body.horaEntrada,
