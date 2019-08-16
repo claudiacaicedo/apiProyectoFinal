@@ -1,5 +1,5 @@
 module.exports = (app) => {
-    const horarios = require('./lab.controller.js');
+    const horarios = require('./horario.controller.js');
 
     // Create a new Lab
     app.post('/horarios', horarios.create);
